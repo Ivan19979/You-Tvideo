@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>You-Tvideo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__link" href="/">
+          <svg
+            class="header__logo"
+            viewBox="0 0 240 32"
+            role="img"
+            aria-label="Logo service You-Tvideo"
+          >
+            <use xlink:href="/image/sprite.svg#logo-orange" />
+          </svg>
+        </a>
+
+        <a href="favorite.html" class="header__link header__link_favorite">
+          Избранное
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="search">
+        <div class="container">
+          <form class="search__form">
+            <label class="search__label">
+              <input type="search" class="search__input" />
+              <button class="search__btn" type="submit">поиск</button>
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="container">
+          <iframe
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/4ABdtq-HAL4"
+            title="Я ВОЗВРАЩАЮСЬ! Что стало с BLACK AND WHITE CUSTOMS?!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="video__container">
+            <h1 class="video__title">Философия Идущего к реке</h1>
+            <p class="video-list__title">Избранное</p>
+          </div>
+          <p class="video__chanel">Правое полушарие интроверта</p>
+          <div class="video__description">
+            <p class="video__description-published">
+              1 575 581 просмотр Дата премьеры: 16 авг. 2024 г.
+            </p>
+            <p class="video__description-subtitle">
+              Смотрите наш курс-саммари «Как понимать философию» фоном.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video_list">
+        <div class="container">
+          <h2 class="video-list__title">Похожие видео</h2>
+          <ul class="video-list__items">
+            <li class="video-list__item">
+              <article class="video-card">
+                <a href="/video.html/1234" class="video-card__link">
+                  <img
+                    src="../image//img1.jpg"
+                    alt="Превью: Философия Идущего к реке"
+                    class="video-card__thumbnail"
+                  />
+                  <h3 class="video-card__title">Философия Идущего к реке</h3>
+                  <p class="video-card__chanel">Правое полушарие интроверта</p>
+                  <p class="video-card__duration">31 мин 25 сек</p>
+                </a>
+                <button class="video-card__favorite" type="button"></button>
+              </article>
+            </li>
+
+            <li class="video-list__item">
+              <article class="video-card">
+                <a href="/video.html/1234" class="video-card__link">
+                  <img
+                    src="../image//img2.jpg"
+                    alt="Превью: Как выжить в Средние века?"
+                    class="video-card__thumbnail"
+                  />
+                  <h3 class="video-card__title">Как выжить в Средние века?</h3>
+                  <p class="video-card__chanel">Правое полушарие интроверта</p>
+                  <p class="video-card__duration">31 мин 25 сек</p>
+                </a>
+                <button class="video-card__favorite" type="button"></button>
+              </article>
+            </li>
+
+            <li class="video-list__item">
+              <article class="video-card">
+                <a href="/video.html/1234" class="video-card__link">
+                  <img
+                    src="../image//img3.jpg"
+                    alt="Превью: История Кока Колы"
+                    class="video-card__thumbnail"
+                  />
+                  <h3 class="video-card__title">История Кока Колы</h3>
+                  <p class="video-card__chanel">Правое полушарие интроверта</p>
+                  <p class="video-card__duration">31 мин 25 сек</p>
+                </a>
+                <button class="video-card__favorite" type="button"></button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="comtainer footer__container">
+        <a class="footer__link" href="/">
+          <svg
+            class="footer__link__logo"
+            viewBox="0 0 360 48"
+            role="img"
+            aria-label="Logo service You-Tvideo"
+          >
+            <use xlink:href="../image/sprite.svg#logo-white" />
+          </svg>
+
+          <div class="footer__developers">
+            <ul class="footer__developers-list">
+              <li class="footer__developers-item">
+                Designer:
+                <a
+                  class="footer__developer-link"
+                  href="https:/t.me/Mrshmallowww"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Anastasia Ilina
+                </a>
+              </li>
+              <li class="footer__developers-item">
+                Developer:
+                <a
+                  class="footer__developer-link"
+                  href="https:/t.me/Shchurupoff"
+                  target="_blank"
+                  rel="noopener"
+                  >Ivan Shchurupov
+                </a>
+              </li>
+            </ul>
+            <p class="footer__developer-copyright">© You-Tvideo, 2023</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script href="index.js"></script>
+  </body>
+</html>
