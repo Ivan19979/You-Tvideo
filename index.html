@@ -36,7 +36,11 @@
       <section class="search">
         <div class="container">
           <form class="search__form">
-            <input type="search" class="search__input" />
+            <input
+              type="search"
+              class="search__input"
+              placeholder="Найти видео..."
+            />
             <button class="search__btn" type="submit">
               <span>поиск</span>
               <svg class="search__icon">
@@ -68,7 +72,7 @@
                   type="button"
                   aria-label="added in favorite"
                 >
-                  <svg class="search__icon">
+                  <svg class="video-card__icon">
                     <use
                       class="star-o"
                       xlink:href="/image/sprite.svg#star-ob"
@@ -81,7 +85,7 @@
 
             <li class="video-list__item">
               <article class="video-card">
-                <a href="/video.html/1234" class="video-card__link">
+                <a href="/video.html" class="video-card__link">
                   <img
                     src="image//img2.jpg"
                     alt="Превью: Как выжить в Средние века?"
@@ -96,7 +100,7 @@
                   type="button"
                   aria-label="added in favorite"
                 >
-                  <svg class="search__icon">
+                  <svg class="video-card__icon">
                     <use
                       class="star-o"
                       xlink:href="/image/sprite.svg#star-ob"
@@ -109,7 +113,7 @@
 
             <li class="video-list__item">
               <article class="video-card">
-                <a href="/video.html/1234" class="video-card__link">
+                <a href="/video.html" class="video-card__link">
                   <img
                     src="image//img3.jpg"
                     alt="Превью: История Кока Колы"
@@ -120,11 +124,11 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite video-card__favorite_active"
                   type="button"
                   aria-label="added in favorite"
                 >
-                  <svg class="search__icon">
+                  <svg class="video-card__icon">
                     <use
                       class="star-o"
                       xlink:href="/image/sprite.svg#star-ob"
@@ -140,7 +144,7 @@
     </main>
 
     <footer class="footer">
-      <div class="comtainer footer__container">
+      <div class="container footer__container">
         <a class="footer__link" href="/">
           <svg
             class="footer__link__logo"
@@ -150,34 +154,34 @@
           >
             <use xlink:href="/image/sprite.svg#logo-white" />
           </svg>
-
-          <div class="footer__developers">
-            <ul class="footer__developers-list">
-              <li class="footer__developers-item">
-                Designer:
-                <a
-                  class="footer__developer-link"
-                  href="https:/t.me/Mrshmallowww"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Anastasia Ilina
-                </a>
-              </li>
-              <li class="footer__developers-item">
-                Developer:
-                <a
-                  class="footer__developer-link"
-                  href="https:/t.me/Shchurupoff"
-                  target="_blank"
-                  rel="noopener"
-                  >Ivan Shchurupov
-                </a>
-              </li>
-            </ul>
-            <p class="footer__developer-copyright">© You-Tvideo, 2023</p>
-          </div>
         </a>
+
+        <div class="footer__developers">
+          <ul class="footer__developers-list">
+            <li class="footer__developers-item">
+              Designer:
+              <a
+                class="footer__developer-link"
+                href="https:/t.me/Mrshmallowww"
+                target="_blank"
+                rel="noopener"
+              >
+                Anastasia Ilina
+              </a>
+            </li>
+            <li class="footer__developers-item">
+              Developer:
+              <a
+                class="footer__developer-link"
+                href="https:/t.me/Shchurupoff"
+                target="_blank"
+                rel="noopener"
+                >Ivan Shchurupov
+              </a>
+            </li>
+          </ul>
+          <p class="footer__developer-copyright">© You-Tvideo, 2023</p>
+        </div>
       </div>
     </footer>
     <script href="index.js"></script>

@@ -49,22 +49,31 @@
         <div class="container">
           <div class="video__player">
             <iframe
-              class="vodeo__iframe"
-              src="https://www.youtube.com/embed/4ABdtq-HAL4"
-              title="Я ВОЗВРАЩАЮСЬ! Что стало с BLACK AND WHITE CUSTOMS?!"
+              class="video__iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-452p_9ESbM?si=2d4gD396gtHWxjb6"
+              title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
           </div>
           <div class="video__content">
-            <h2 class="video__title">Философия Идущего к реке</h2>
-            <button class="video-list__title">
-              <span>Избранное</span>
-              <svg class="header__icon">
-                <use xlink:href="/image/sprite.svg#star-ob"></use>
-              </svg>
-            </button>
+            <div class="video-container">
+              <h2 class="video__title">Философия Идущего к реке</h2>
+              <button class="video__favorite video__favorite_active">
+                <span class="video__no-active">Избранное</span>
+                <span class="video__active">В избранном</span>
+                <svg class="header__icon">
+                  <use
+                    class="star-o"
+                    xlink:href="/image/sprite.svg#star-ob"
+                  ></use>
+                  <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                </svg>
+              </button>
+            </div>
           </div>
           <p class="video__channel">Правое полушарие интроверта</p>
           <p class="video__info">
@@ -170,7 +179,7 @@
     </main>
 
     <footer class="footer">
-      <div class="comtainer footer__container">
+      <div class="container footer__container">
         <a class="footer__link" href="/">
           <svg
             class="footer__link__logo"
