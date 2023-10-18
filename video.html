@@ -22,7 +22,10 @@
         </a>
 
         <a href="favorite.html" class="header__link header__link_favorite">
-          Избранное
+          <span>Избранное</span>
+          <svg class="header__icon">
+            <use xlink:href="/image/sprite.svg#star-ob"></use>
+          </svg>
         </a>
       </div>
     </header>
@@ -31,38 +34,46 @@
       <section class="search">
         <div class="container">
           <form class="search__form">
-            <label class="search__label">
-              <input type="search" class="search__input" />
-              <button class="search__btn" type="submit">поиск</button>
-            </label>
+            <input type="search" class="search__input" />
+            <button class="search__btn" type="submit">
+              <span>поиск</span>
+              <svg class="search__icon">
+                <use xlink:href="/image/sprite.svg#search"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </section>
 
       <section class="video">
         <div class="container">
-          <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/4ABdtq-HAL4"
-            title="Я ВОЗВРАЩАЮСЬ! Что стало с BLACK AND WHITE CUSTOMS?!"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <div class="video__container">
-            <h1 class="video__title">Философия Идущего к реке</h1>
-            <p class="video-list__title">Избранное</p>
+          <div class="video__player">
+            <iframe
+              class="vodeo__iframe"
+              src="https://www.youtube.com/embed/4ABdtq-HAL4"
+              title="Я ВОЗВРАЩАЮСЬ! Что стало с BLACK AND WHITE CUSTOMS?!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
-          <p class="video__chanel">Правое полушарие интроверта</p>
-          <div class="video__description">
-            <p class="video__description-published">
-              1 575 581 просмотр Дата премьеры: 16 авг. 2024 г.
-            </p>
-            <p class="video__description-subtitle">
-              Смотрите наш курс-саммари «Как понимать философию» фоном.
-            </p>
+          <div class="video__content">
+            <h2 class="video__title">Философия Идущего к реке</h2>
+            <button class="video-list__title">
+              <span>Избранное</span>
+              <svg class="header__icon">
+                <use xlink:href="/image/sprite.svg#star-ob"></use>
+              </svg>
+            </button>
           </div>
+          <p class="video__channel">Правое полушарие интроверта</p>
+          <p class="video__info">
+            <span class="video__view">1 575 581 просмотр</span>
+            <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
+          </p>
+          <p class="video__description">
+            Смотрите наш курс-саммари «Как понимать философию» фоном.
+          </p>
         </div>
       </section>
 
@@ -72,9 +83,9 @@
           <ul class="video-list__items">
             <li class="video-list__item">
               <article class="video-card">
-                <a href="/video.html/1234" class="video-card__link">
+                <a href="/video.html" class="video-card__link">
                   <img
-                    src="../image//img1.jpg"
+                    src="image//img1.jpg"
                     alt="Превью: Философия Идущего к реке"
                     class="video-card__thumbnail"
                   />
@@ -82,7 +93,19 @@
                   <p class="video-card__chanel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
-                <button class="video-card__favorite" type="button"></button>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="added in favorite"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/image/sprite.svg#star-ob"
+                    ></use>
+                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                  </svg>
+                </button>
               </article>
             </li>
 
@@ -90,7 +113,7 @@
               <article class="video-card">
                 <a href="/video.html/1234" class="video-card__link">
                   <img
-                    src="../image//img2.jpg"
+                    src="image//img2.jpg"
                     alt="Превью: Как выжить в Средние века?"
                     class="video-card__thumbnail"
                   />
@@ -98,7 +121,19 @@
                   <p class="video-card__chanel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
-                <button class="video-card__favorite" type="button"></button>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="added in favorite"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/image/sprite.svg#star-ob"
+                    ></use>
+                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                  </svg>
+                </button>
               </article>
             </li>
 
@@ -106,7 +141,7 @@
               <article class="video-card">
                 <a href="/video.html/1234" class="video-card__link">
                   <img
-                    src="../image//img3.jpg"
+                    src="image//img3.jpg"
                     alt="Превью: История Кока Колы"
                     class="video-card__thumbnail"
                   />
@@ -114,7 +149,19 @@
                   <p class="video-card__chanel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
-                <button class="video-card__favorite" type="button"></button>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="added in favorite"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/image/sprite.svg#star-ob"
+                    ></use>
+                    <use class="star" xlink:href="/image/sprite.svg#star"></use>
+                  </svg>
+                </button>
               </article>
             </li>
           </ul>
