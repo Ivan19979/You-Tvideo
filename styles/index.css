@@ -37,6 +37,11 @@ body {
   background-color: #fff;
   line-height: 1.2;
   letter-spacing: 0.2em;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
 }
 
 img,
@@ -231,6 +236,7 @@ iframe {
 }
 
 .video-list__title {
+  line-height: 29px;
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 0.02em;
@@ -249,6 +255,7 @@ iframe {
 .video-card__thumbnail {
   border-radius: 16px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .video-card__title {
