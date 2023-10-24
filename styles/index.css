@@ -34,7 +34,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-size: 20px;
   color: #292d32;
-  background-color: #fff;
+  background-color: #fff6eb;
   line-height: 1.2;
   letter-spacing: 0.2em;
   display: flex;
@@ -196,6 +196,7 @@ iframe {
   letter-spacing: 0.02em;
   outline: none;
   color: #151515;
+  background-color: transparent;
 }
 
 .search__input:focus {
@@ -282,7 +283,7 @@ iframe {
   display: none;
 }
 
-.video-card__favorite_active .star {
+.video-card__favorite.active .star {
   display: block;
 }
 .video-card__icon {
@@ -325,6 +326,7 @@ iframe {
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 0.02em;
+  max-width: 80%;
 }
 
 .video__favorite {
@@ -341,18 +343,18 @@ iframe {
   display: none;
 }
 
-.video__favorite_active .star-o {
+.video__favorite.active .star-o {
   display: none;
 }
 
-.video__favorite_active .video__no-active {
+.video__favorite.active .video__no-active {
   display: none;
 }
-.video__favorite_active .video__active {
+.video__favorite.active .video__active {
   display: block;
 }
 
-.video__favorite_active .star {
+.video__favorite.active .star {
   display: flex;
 }
 

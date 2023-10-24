@@ -8,7 +8,7 @@
     <title>You-Tvideo</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a class="header__link" href="/">
           <svg
@@ -28,10 +28,10 @@
           </svg>
         </a>
       </div>
-    </header>
+    </header> -->
 
     <main>
-      <section class="search">
+      <!-- <section class="search">
         <div class="container">
           <form class="search__form">
             <input
@@ -47,9 +47,9 @@
             </button>
           </form>
         </div>
-      </section>
+      </section> -->
 
-      <section class="video">
+      <!-- <section class="video">
         <div class="container">
           <div class="video__player">
             <iframe
@@ -66,7 +66,7 @@
           <div class="video__content">
             <div class="video-container">
               <h2 class="video__title">Философия Идущего к реке</h2>
-              <button class="video__favorite video__favorite_active">
+              <button class="video__favorite favorite">
                 <span class="video__no-active">Избранное</span>
                 <span class="video__active">В избранном</span>
                 <svg class="header__icon">
@@ -88,9 +88,9 @@
             Смотрите наш курс-саммари «Как понимать философию» фоном.
           </p>
         </div>
-      </section>
+      </section> -->
 
-      <section class="video_list">
+      <!-- <section class="video_list">
         <div class="container">
           <h2 class="video-list__title">Похожие видео</h2>
           <ul class="video-list__items">
@@ -107,9 +107,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="1"
                 >
                   <svg class="search__icon">
                     <use
@@ -135,9 +136,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="2"
                 >
                   <svg class="search__icon">
                     <use
@@ -163,9 +165,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="3"
                 >
                   <svg class="search__icon">
                     <use
@@ -179,7 +182,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -223,6 +226,6 @@
         </a>
       </div>
     </footer>
-    <script href="video.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

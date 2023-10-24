@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero__container">
             <a href="/favorite.html" class="hero__link">
@@ -32,9 +32,9 @@
             <p class="hero__tagline">Удобный видеохостинг для тебя</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="search">
+      <!-- <section class="search">
         <div class="container">
           <form class="search__form">
             <input
@@ -50,9 +50,9 @@
             </button>
           </form>
         </div>
-      </section>
+      </section> -->
 
-      <section class="video_list">
+      <!-- <section class="video_list">
         <div class="container">
           <h2 class="video-list__title">В тренде</h2>
           <ul class="video-list__items">
@@ -69,9 +69,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="1"
                 >
                   <svg class="video-card__icon">
                     <use
@@ -97,9 +98,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="2"
                 >
                   <svg class="video-card__icon">
                     <use
@@ -125,9 +127,10 @@
                   <p class="video-card__duration">31 мин 25 сек</p>
                 </a>
                 <button
-                  class="video-card__favorite video-card__favorite_active"
+                  class="video-card__favorite favorite"
                   type="button"
                   aria-label="added in favorite"
+                  data-video-id="3"
                 >
                   <svg class="video-card__icon">
                     <use
@@ -141,7 +144,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="footer">
@@ -185,6 +188,7 @@
         </div>
       </div>
     </footer>
+    <script src="//unpkg.com/navigo"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
