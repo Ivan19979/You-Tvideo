@@ -39,7 +39,7 @@ const fetchSearchVideos = async (searchQuery, page) => {
         .filter((el) => el.length > 3)
         .join(" | ")
     );
-    url.searchParams.append("maxResults", 12);
+    // url.searchParams.append("maxResults", 12);
     // url.searchParams.append("regionCode", "RU");
     url.searchParams.append("type", "video");
     url.searchParams.append("key", API_KEY);
@@ -420,7 +420,7 @@ const videoRoute = async (context) => {
   const videoSection = createVideo(video);
 
   const searchQuery = video.snippet.title;
-  const videos = await fetchSearchVideos(searchQuery, 2);
+  const videos = await fetchSearchVideos(searchQuery);
   const listVideo = createListVideo(videos, "Похожие видео");
   main.innerHTML = "";
   main.append(search, videoSection, listVideo);
