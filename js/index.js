@@ -234,7 +234,6 @@ const createListVideo = (videos, titleText, pagination) => {
 
   return videoListSection;
 };
-
 const createVideo = (video) => {
   const videoSection = document.createElement("section");
   videoSection.classList.add("video");
@@ -279,12 +278,12 @@ const createVideo = (video) => {
               video.statistics.viewCount
             ).toLocaleString()} просмотров</span>
             <div class="video__date">Дата премьеры: ${formatDate(
-              video.snippet.publishedAt
+              video.snippet.publishedAt.replace("T", " ").replace("Z", "")
             )}</div>
           </p>
-          <hr>
+          <br>
           <p class="video__description">
-            ${video.snippet.description}
+            ${video.snippet.description.replaceAll("\n", "<br/>").slice(0, 500)}
           </p>
         </div>
   `;
